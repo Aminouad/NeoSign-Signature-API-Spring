@@ -1,13 +1,13 @@
-package com.eideasy.samples;
+package com.NEOledge.SignatureAPI;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CefEsignatureBuildingBlockSamplesApplication {
+public class SignatureApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CefEsignatureBuildingBlockSamplesApplication.class, args);
+		SpringApplication.run(SignatureApiApplication.class, args);
 	}
 
 }

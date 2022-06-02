@@ -8,16 +8,16 @@
         <version>2.3.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.eideasy</groupId>
-    <artifactId>cef-esignature-building-block-samples</artifactId>
+    <groupId>com.NEOledge</groupId>
+    <artifactId>SignatureAPI</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cef-esignature-building-block-samples</name>
-    <description>Samples for CEF eSignature building block</description>
+    <name>SignatureAPI</name>
+    <description>PAdES XAdES signature</description>
 
     <properties>
         <java.version>14</java.version>
         <dss.groupId>eu.europa.ec.joinup.sd-dss</dss.groupId>
-        <dss.version>5.7</dss.version>
+        <dss.version>5.10.1</dss.version>
     </properties>
 
     <repositories>
@@ -45,9 +45,21 @@
             <version>${dss.version}</version>
         </dependency>
         <dependency>
+            <groupId>eu.europa.ec.joinup.sd-dss</groupId>
+            <artifactId>dss-crl-parser-stream</artifactId>
+            <version>${dss.version}</version>
+
+        </dependency>
+        <dependency>
             <groupId>${dss.groupId}</groupId>
             <artifactId>dss-pades</artifactId>
             <version>${dss.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>eu.europa.ec.joinup.sd-dss</groupId>
+            <artifactId>dss-tsl-validation</artifactId>
+            <version>${dss.version}</version>
+
         </dependency>
         <dependency>
             <groupId>${dss.groupId}</groupId>
@@ -58,6 +70,13 @@
             <groupId>${dss.groupId}</groupId>
             <artifactId>dss-token</artifactId>
             <version>${dss.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>eu.europa.ec.joinup.sd-dss</groupId>
+            <artifactId>dss-tsl-validation</artifactId>
+
+            <version>${dss.version}</version>
+
         </dependency>
         <dependency>
             <groupId>${dss.groupId}</groupId>
